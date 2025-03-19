@@ -1,0 +1,14 @@
+// Charger une valeur immédiate en décimal
+LOAD R1, #100    // Charge 100 dans R1
+
+// Charger une valeur immédiate en hexadécimal
+LOAD R2, #0x80   // Charge 0x80 (128 en décimal) dans R2
+
+// Charger une adresse hexadécimale (GPIO)
+LOAD R3, #0x8000 // Charge 0x8000 dans R3 (adresse GPIO)
+
+// Stocker la valeur de R1 en mémoire (exemple d'utilisation de STORE)
+STORE R3, R1     // Écrit la valeur de R1 à l'adresse contenue dans R3 (GPIO_BASE)
+
+// Boucle infinie
+HALT
